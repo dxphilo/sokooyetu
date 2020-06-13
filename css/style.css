@@ -7,3 +7,7 @@
     -o-background-size: cover;
     background-size: cover;
   }
+ 
+  #formsect{
+    padding: 30px 0;
+  }

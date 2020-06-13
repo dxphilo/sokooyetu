@@ -31,9 +31,14 @@ contact us if you want to contribute to our open source
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://source.unsplash.com/bF2vsubyHcQ/1920x1080" rel="icon" type="image/x-icon" />
+
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link  rel="stylesheet"  href="./css/bootstrap.css" >
     <link rel="stylesheet" href="./css/style.css" >
-    <title>Sokoo Yetu</title>
+    <title>SOKOOYETU</title>
     <meta property="og:title" content="sokoo yetu">
     <meta property="og:site_name" content="sokooyetu.com">
     <meta property="og:url" content="www.sokooyetu.com">
@@ -80,9 +85,13 @@ contact us if you want to contribute to our open source
                     Profile
                 </a>
                         <div class="dropdown-menu" aria-labelledby="navDropDownLink">
-                            <a class="dropdown-item" href="#">Sign Up</a>
+                            <a class="dropdown-item" href="#"><button type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
+                              Sign Up
+                            </button></a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Log In</a>
+                            <a class="dropdown-item" href="#"><button type="button" class="btn " data-toggle="modal" data-target="#exampleModal1">
+                              Log In
+                            </button></a>
                         </div>
                     </li>
                 </ul>
@@ -94,6 +103,98 @@ contact us if you want to contribute to our open source
 
     <!-- end of the nav style -->
 
+    <!-- open modal section -->
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register To Sokoo Yetu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="#">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
+            
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Number</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter number">
+            
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Business Type</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Business Type">
+            
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm password">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">x</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of moodal button -->
+
+<!-- start of the login modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Log In To Sokoo Yetu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="#">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password ... ">
+
+          </div>
+          <small id="emailHelp" class="form-text text-muted">errors from form section</small>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of the log in modal -->
+
     <!-- html for the container section  with image slider section-->
 
     <div>
@@ -102,6 +203,7 @@ contact us if you want to contribute to our open source
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
@@ -125,6 +227,14 @@ contact us if you want to contribute to our open source
                 <p class="lead">Reach customers through your products</p>
               </div>
             </div>
+
+              <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('image/berry-blueberries-fresh-545040.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4">Sell Your Products</h2>
+                <p class="lead">Reach customers through your products</p>
+              </div>
+            </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -137,6 +247,30 @@ contact us if you want to contribute to our open source
         </div>
       </div>
       <!-- end of the header and slider section -->
+      <!-- search input function -->
+
+      <div id="formsect" class="row">
+        <div class="input-group w-50 mx-auto">
+          <input class="form-control active" type="search" placeholder="Search">
+          <div class="input-group-append">
+              <div class="input-group-text" id="btnGroupAddon2"><i class="fa fa-search"></i></div>
+          </div>
+      </div>
+      </div>
+
+      <!-- start of the main section of the products section -->
+
+      <div id="mainsection">
+
+      </div>
+      <!-- end of the products section -->
+
+
+      <!-- start of the footer section -->
+      <footer>
+
+      </footer>
+      <!-- end of the footer section -->
 
       
 
