@@ -11,3 +11,34 @@
   #formsect{
     padding: 30px 0;
   }
+#sponrsered{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* #sponrsered .row{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+#sponrsered .row .card{
+  padding: 0 6px;
+}
+#sponrsered .row .card img{
+  cursor: pointer;
+}
+#mainsection{
+ margin: 10px 15px;
+
+}
+footer{
+  color: aliceblue;
+}
+footer a{
+  color: aliceblue;
+}
+footer a:hover{
+  text-decoration: none;
+}
