@@ -3,4 +3,4 @@
 sokooyetu
 
 
-Sell your unused items online
+Sell your unused products online
